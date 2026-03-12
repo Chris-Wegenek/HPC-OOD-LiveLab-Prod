@@ -12,12 +12,12 @@ Note: Deploying the terraform stack takes around 10 Minutes, However the actual 
 
 It is assumed that you have access to or familiarity with following components:
 
-- An Oracle account
+- Familiarity with Oracle Cloud.
+- An Oracle Cloud Account.
 - The ability to create and delete resources in your tenancy.
+- Familiarity with OCI components and features.
 - A compartment to deploy the solution in.
-- Necessary user permissions to deploy and manage resources in your tenant.
-- Familiarity with Oracle Cloud Infrastructure (OCI) components.
-- How to download a folder from GitHub.
+- Ability to access and download a file from GitHub.
 
 ### Objectives
 
@@ -38,14 +38,13 @@ Follow the link below to go to the OCI GitHub page with the folder
 
 link
 
-* [Download the link here](https://github.com/Germain-V/hpc-ood-stack)
+* [Download the folder here.](https://github.com/Germain-V/hpc-ood-stack)
 
 ### 2. Download the folder
 
-Now select the folder and download it locally.
+Now select the folder and download it locally (You can leave it as a zip).
 
-![image](./images/images.png) TODO
-
+![Shows where to click to download the zip file of the terraform code.](./images/download_button.png)
 
 
 ## Task 2: Deploy the stack on OCI
@@ -54,17 +53,17 @@ Now select the folder and download it locally.
 
 First log in to your OCI console and select the hamburger dropdown menu.
 
-![Hamburger Menu](./images/hamburger.png)
+![Shows the where the hamburger menu is.](./images/hamburger.png)
 
 Then use the search bar to look up "**Stacks**"
 
-![Stacks in Search Bar](./images/stacks.png)
+![Shows where to type in stacks in the search bar.](./images/stacks.png)
 
 ### 2. Create Stack
 
 Make sure you have the correct **compartment** selected then select "**Create stack**".
 
-![Create stack and selct compartment photo](./images/compartment-select.png)
+![Shows where to selct compartment and where the create stack button is.](./images/compartment-select.png)
 
 
 ### 3. Stack Information
@@ -73,7 +72,7 @@ Leave **My configuration** at the top selected and then drag and drop the terraf
 
 When you have dropped the folder you can select **Next** at the bottom.
 
-![image](./images/Drag-and-drop-folder.png)
+![Shows the first stack information screen where you will need to drag and drop the terraform zip folder.](./images/Drag-and-drop-folder.png)
 
 We now will begin to configure all the variables necessary to deploy the stack.
 
@@ -88,7 +87,7 @@ We now will begin to configure all the variables necessary to deploy the stack.
 
 ***Note: Make sure if you create a new key that you save the public and private copies localy for later***
 
-![image](./images/cluster_configuration.png)
+![Shows what the cluster configuration screen you are seeing should look like.](./images/cluster_configuration.png)
 
 
 ### 5. Headnode Operation
@@ -107,7 +106,7 @@ We now will begin to configure all the variables necessary to deploy the stack.
 
 
 	
-![images](./images/head_node_options.png)
+![Image showing what the user's end selection should look like for the headnode options.](./images/head_node_options.png)
 
 ### 6. Compute node options
 
@@ -138,9 +137,9 @@ We now will begin to configure all the variables necessary to deploy the stack.
   |- **Modify BIOS options:**  |	***Unselected***
   | - **Change hostname:** |	***Enabled***   *(Note: You can change this if you'd like)*
 
-![images](./images/Compute_node_options.png)
+![Image showing what the user's end selection should look like for the compute node options.](./images/compute_node_options.png)
 
-![images](./images/Compute_node_options2.png)
+![Image showing what the user's end selection should look like for the compute node options.](./images/compute_node_options2.png)
 
 ### 7. Additional Login Node
  | Variable | Needed Input | 
@@ -148,7 +147,7 @@ We now will begin to configure all the variables necessary to deploy the stack.
   |  - **Default username for login node:**|	**opc**
   | - **Additional block volume for login node:** |	***Unselected***
 
-![images](./images/Additional_Login_Node.png)
+![Image showing what the user's end selection should look like for the additional log in node options.](./images/additional_Login_Node.png)
 
 ### 8. Cluster Monitoring
  | Variable | Needed Input | 
@@ -157,7 +156,7 @@ We now will begin to configure all the variables necessary to deploy the stack.
   | - **Install HPC Cluster alerting Tools:** |	***Enabled***
   | - **Monitoring Node:** |	***Unselected***
 
-![images](./images/Cluster_Monitoring.png)
+![Image showing what the user's end selection should look like for the headnode options.](./images/cluster_Monitoring.png)
 
 ### 9. Autoscaling
  | Variable | Needed Input | 
@@ -165,17 +164,17 @@ We now will begin to configure all the variables necessary to deploy the stack.
   | - **Scheduler based autoscaling:** |	***Unselected***
   | - **RDMA Latency check:** |	***Enabled***
 
-![images](./images/Autoscaling.png)
+![Image showing what the user's end selection should look like for the autoscaling options.](./images/autoscaling.png)
 
 ### 10. API authentication, needed for autoscaling
 
-![images](./images/API_authentication.png)
+![Image showing what the user's end selection should look like for the API options](./images/api_authentication.png)
 
 ### 11. File systems
 
 You can leave all the options: ***Unselected***
 
-![images](./images/Filesystem.png)
+![Image showing what the user's end selection should look like for the filesystem options.](./images/filesystem.png)
 
 ### 12. Network options
 
@@ -183,13 +182,13 @@ You can choose to create a new VCN with this stack (Recommended).
 
 You don't need to make any changes to the default network.
 
-![images](./images/Network_options1.png)
+![Image showing what the user's end selection should look like for the network options part 1.](./images/network_options1.png)
 
 You can also choose to re-use another VCN.
 
 `Warning: Not all VCN configurations will be compatible with the stack. This may cause the stack to fail deployment.`
 
-![images](./images/Network_options2.png)
+![Image showing what the user's end selection should look like for the network options part 2.](./images/network_options2.png)
 
 ### 13. Software
  | Variable | Needed Input | 
@@ -207,7 +206,7 @@ You can also choose to re-use another VCN.
   | - **Enable Limits for Slurm jobs:** |	***Unselected***
   | - **Turn on Healthchecks for GPU nodes:** |	***Enabled***
 
-![images](./images/Software.png)
+![Image showing what the user's end selection should look like for the software options.](./images/software.png)
 
 ### 14. Debug and other settings
  | Variable | Needed Input | 
@@ -237,8 +236,9 @@ You can also choose to re-use another VCN.
 
 	Once you complete this step you can click next at the bottom.
 
-![images](./images/debug-other1.png)
-![images](./images/debug-other2.png)
+![Image showing what the user's end selection should look like for the debug and other final options.](./images/debug-other1.png)
+
+![Image showing what the user's end selection should look like for the debug and other fianl options part two.](./images/debug-other2.png)
  
 ### 15. Final Step
 
@@ -249,17 +249,17 @@ If all the information looks correct you can scroll all the way to the bottom an
 
 This will automatically deploy your stack right away.
 
-![images](./images/finalscreen.png)
+![Image showing what the user's end selection should look like for the final screen for the terraform stack set up.](./images/finalscreen.png)
 
 Now click "**Save Changes**" at the bottom and wait for your new HPC stack to deploy.
 
 If your deployment is successful you should see the RMJ (Resource Manager Job) tile turn green.
 
-![images](./images/successfuljob.png)
+![Image showing the Jobs Status screen and a successful job.](./images/successfuljob.png)
 
 If you click on stack details at the top you will also see a confirmation that your stack successfully deployed and that all of your resources are created.
 
-![images](./images/stackdeploy.png)
+![Image showing the stack details page and a succesful stack deployment.](./images/stackdeploy.png)
 
 ## Lab Completed
 
@@ -269,9 +269,15 @@ If you encounter a failure make sure you first destroy the stack before you dele
 
 If you do not destroy the stack before redeploying, or deleting the stack, you may encounter some issues.
 
-You may proceed to the next lab, where you will log into the stack manager.
+That concludes this section. You may now **proceed to the next lab**, where you will log into the Open OnDemand application.
 
 ## Learn More
+
+* [Terraform Documentation](https://docs.oracle.com/en-us/iaas/Content/dev/terraform/home.htm)
+
+* [Information on Resource Manager](https://www.oracle.com/cloud/cloud-native/resource-manager/)
+
+* [Resource Manager Documentation](https://docs.oracle.com/en-us/iaas/Content/ResourceManager/home.htm)
 
 ## Acknowledgements
 
@@ -281,4 +287,4 @@ You may proceed to the next lab, where you will log into the stack manager.
     - Germain Vargas, Cloud Engineering
 
 * **Last Updated By/Date:** Chris Wegenek
-, Cloud Engineering, November 2025
+, Cloud Engineering, March 2026

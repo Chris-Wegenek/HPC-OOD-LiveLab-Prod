@@ -6,13 +6,13 @@ In this lab you will destroy the terraform stack you created using the resource 
 
 **Estimated Time:** 2 Minutes
 
-Note: Destroying the terraform stack takes around 2 Minutes, However the actual infrastructure deployment takes around 20-30 min to delete.
+Note: Destroying the terraform stack takes around 2 minutes, However the actual infrastructure deployment takes around 20-30 min to delete.
 
 ### Prerequisites
 
 It is assumed that you:
 
-- The ability to create and delete resources in your tenancy.
+- Have the ability to create and delete resources in your tenancy.
 - Have already created and deployed a stack and have not manually deleted any components that were created.
 
 
@@ -33,23 +33,23 @@ Now we will go to the resorce manager stacks screen and destory the stack.
 
 First log in to your OCI console and select the hamburger dropdown menu.
 
-![Hamburger Menu](./images/hamburger.png)
+![Image showing the Hamburger Menu is in the top left corner of the screen](./images/hamburger.png)
 
 Then use the search bar to look up "**Stacks**"
 
-![Stacks in Search Bar](./images/stacks.png)
+![Image showing what looking up stacks in search bar looks like.](./images/stacks.png)
 
 ### 2. Select compartment
 
 Make sure you have the **compartment** where you created the stack selected.
 
-![Create stack and selct compartment photo](./images/compartment-select.png)
+![hows where to selct compartment and where the create stack button is.](./images/compartment-select.png)
 
 ### 3. Selct the stack
 
 Select the stack that you would like to delete by clicking on its name.
 
-![image](./images/stack.png)
+![Image showing that you can find your stack on the bottom of the stack screen under names.](./images/stack.png)
 
 ### 4. Destroy the stack
 
@@ -59,17 +59,28 @@ This means that resources were deployed and now you can run a destroy job that w
 
 To destroy your stack all you need to do is click the red **"Destroy"** button and then select the gray **"Destroy"** button on the bottom of the the pop-up screeen.
 
-![image](./images/stack_screen.png)
+![Image showing what it looks like when you click into the name of your stack.](./images/stack_screen.png)
 
 Once your stack starts the destroy process you will automatically go the job details page and see that your job was accepted.
 
-![image](./images/destroy_screen2.png)
+![Image of what you should see when you destroy the stack within the job details screen, and how the RMJ tile is orange.](./images/destroy_screen2.png)
 
 Once your stack succesfully is destroyed you will see the orange tile turn green.
 
-![image](./images/destroy_screen3.png)
+![Image of what you should see when you succesfully destroy the stack within the job details screen, and the RMJ tile is Green.](./images/destroy_screen3.png)
 
-## (Optional) Task 2: Deleting the stack configuration
+
+## (Optional) Task 2: Editing the stack configuration
+
+If you would like to make a change to the stack before deploying again you can click the **"Edit"** button, and the apply the stack.
+
+![Image of the stack details screen.](./images/stack_screen.png)
+
+## (Optional) Task 3: Redeploying the stack configuration
+
+If you would like to redeploy the stack, and you didn't delete it, you can simply click the **"Apply"** button near the red **"Destroy"** button to deploy the stack again.
+
+## (Optional) Task 4: Deleting the stack configuration
 
 If you have no further use for the stack and would like to perminantly delete the stack you can remove it from your resource manager now that you destroyed all of the resources.
 
@@ -79,27 +90,19 @@ Then click **"Delete stack"** at the bottom of the list of options.
 
 No other tasks need to be completed and the stack configuration should be deleted shortly.
 
-![image](./images/stack_screen.png)
-
-
 ## Lab Completed
 
 Congratulations! You have completed destroying the HPC terraform stack.
 
-If you would like to redeploy the stack, and you didn't delete it, you can simply click the **"Apply"** button near the red **"Destroy"** button to deploy the stack again.
-
-Alternatively if you would like to make a change to the stack before deploying again you can click the **"Edit"** button, and the apply the stack.
-
-This concludes the lab thank you for participating.
+This concludes the LiveLab thank you for participating.
 
 ## Learn More
 
 ## Acknowledgements
 
-* **Author:** Chris Wegenek
-, Cloud Engineering 
+* **Author:** Chris Wegenek, Cloud Engineering 
 * **Contributors:**
     - Germain Vargas, Cloud Engineering
 
 * **Last Updated By/Date:** Chris Wegenek
-, Cloud Engineering, November 2025
+, Cloud Engineering, March 2026

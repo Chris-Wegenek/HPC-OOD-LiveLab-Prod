@@ -4,38 +4,40 @@
 
 ## Workshop Introduction
 
-The workshop will showcase how to deploy a Oracle Cloud HPC stack in an OCI tenancy and how to log into Open on Demand (OOD) the cluster, check metrics, and destroy the stack when you are done.
+The workshop will showcase how to deploy an Oracle Cloud HPC stack in an OCI tenancy and how to log into Open on Demand (OOD) running on the cluster, check metrics, and destroy the stack when you are done.
 
 We will cover following topics as part of the upcoming labs.
 
-- HPC stack prerequisites
-- Deploying the stack on OCI using terraform
-- Accessing OOD
-- Accessing grafana
-- Viewing metrics for the cluster
-- Destroying the stack
+- HPC stack prerequisites.
+- Deploying the stack on OCI using terraform.
+- Accessing OOD.
+- Accessing grafana.
+- Viewing metrics for the cluster.
+- Destroying the stack.
 
 ## Architecture
 
-As part of the workshop, we will be deploying a terraform script that utilizes a VCN, a domain, and the cluster. The total number of VMs in the cluster can vary due to input criteria. The following image showcases the logical architecture of the target lab.
+As part of the workshop, we will be deploying a terraform script that utilizes a VCN, a domain, and deploys the cluster. The total number of VMs in the cluster can vary due to input criteria. The following image showcases the logical architecture of the target lab.
 
-![HPC Lab Architecture](images/HPC-Lab.png)
+![HPC Lab Architecture](images/hpc-Lab.png)
 
 ### Prerequisites
 
 The lab makes following assumptions:
 
-- Familiarity with Oracle Cloud
-- An Oracle Cloud Account
-- A paid tenancy 
-- Familiarity with OCI components and features
--Ability to download a file from GitHub
+- Familiarity with Oracle Cloud.
+- An Oracle Cloud Account.
+- Familiarity with OCI components and features.
+- Ability to access and download a file from GitHub.
+- A working tenancy with the ability to deploy the needed infrastructure.
+
 
 ## Learn More
 
 * [Oracle Cloud](https://www.oracle.com/cloud/)
-* [Oracle Cloud VMware Solution Overview](https://www.oracle.com/in/cloud/compute/vmware/)
-* [OCVS Documentation](https://docs.oracle.com/en-us/iaas/Content/VMware/Concepts/ocvsoverview.htm)
+* [Oracle Cloud HPC Overview](https://www.oracle.com/cloud/hpc/)
+* [Terraform Documentation](https://docs.oracle.com/en-us/iaas/Content/dev/terraform/home.htm)
+* [OOD Documentation](https://osc.github.io/ood-documentation/latest/faqs.html)
 
 ## Acknowledgements
 
@@ -44,4 +46,4 @@ The lab makes following assumptions:
     - Germain Vargas, Cloud Engineering
     - Rafael Marcelino Koike, Cloud Engineering
 
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering November 2025
+* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering March 2026
