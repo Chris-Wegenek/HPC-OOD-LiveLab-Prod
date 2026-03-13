@@ -70,17 +70,17 @@ Once your stack succesfully is destroyed you will see the orange tile turn green
 ![Image of what you should see when you succesfully destroy the stack within the job details screen, and the RMJ tile is Green.](./images/destroy_screen3.png)
 
 
-## (Optional) Task 2: Editing the stack configuration
+## Task 2 (Optional): Editing the stack configuration
 
 If you would like to make a change to the stack before deploying again you can click the **"Edit"** button, and the apply the stack.
 
 ![Image of the stack details screen.](./images/stack_screen.png)
 
-## (Optional) Task 3: Redeploying the stack configuration
+## Task 3(Optional): Redeploying the stack configuration
 
 If you would like to redeploy the stack, and you didn't delete it, you can simply click the **"Apply"** button near the red **"Destroy"** button to deploy the stack again.
 
-## (Optional) Task 4: Deleting the stack configuration
+## Task 4 (Optional): Deleting the stack configuration
 
 If you have no further use for the stack and would like to perminantly delete the stack you can remove it from your resource manager now that you destroyed all of the resources.
 

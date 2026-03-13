@@ -36,15 +36,13 @@ In order to deploy the terraform stack you need to download the folder with the 
 
 Follow the link below to go to the OCI GitHub page with the folder
 
-link
-
-* [Download the folder here.](https://github.com/Germain-V/hpc-ood-stack)
+  * [Download the folder here.](https://github.com/Germain-V/hpc-ood-stack)
 
 ### 2. Download the folder
 
-Now select the folder and download it locally (You can leave it as a zip).
+  Now select the folder and download it locally (You can leave it as a zip).
 
-![Shows where to click to download the zip file of the terraform code.](./images/download_button.png)
+  ![Shows where to click to download the zip file of the terraform code.](./images/download_button.png)
 
 
 ## Task 2: Deploy the stack on OCI
@@ -104,7 +102,7 @@ We now will begin to configure all the variables necessary to deploy the stack.
   | **Controller Image ID:** | ``Oracle-Linux-8.10-2025.08.31-0`` or any similar release date.
   | **Default username for controller:** | You can leave this as opc,
 
-
+***NOTE: IF YOU ARE ON A FREE TIER ACCOUNT YOU MAY NEED TO SELECT A FLEX VM SHAPE IF BARE METAL ISNT AVAILIBLE.***
 	
 ![Image showing what the user's end selection should look like for the headnode options.](./images/head_node_options.png)
 
@@ -136,6 +134,8 @@ We now will begin to configure all the variables necessary to deploy the stack.
   | - **Image:** | 	``Oracle-Linux-8.10-2025.08.31-0`` or any similar release date.
   |- **Modify BIOS options:**  |	***Unselected***
   | - **Change hostname:** |	***Enabled***   *(Note: You can change this if you'd like)*
+
+***NOTE: IF YOU ARE ON A FREE TIER ACCOUNT YOU MAY NEED TO SELECT A FLEX VM SHAPE IF BARE METAL ISNT AVAILIBLE.***
 
 ![Image showing what the user's end selection should look like for the compute node options.](./images/compute_node_options.png)
 
