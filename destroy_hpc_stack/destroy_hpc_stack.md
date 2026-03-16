@@ -102,7 +102,7 @@ This concludes the LiveLab thank you for participating.
 
 * **Author:** Chris Wegenek, Cloud Engineering 
 * **Contributors:**
-    - Germain Vargas, Cloud Engineering
+Germain Vargas, Cloud Engineering
 
 * **Last Updated By/Date:** Chris Wegenek
 , Cloud Engineering, March 2026

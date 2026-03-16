@@ -28,21 +28,15 @@ In this lab, you will:
 - Configure the variables for the terraform stack.
 - Review the details and deploy the stack.
 
-## Task 1: Download the terraform folder from Github
+## Task 1: Download the terraform folder from OCI
 
-In order to deploy the terraform stack you need to download the folder with the terraform scripts from the OCI Github.
+In order to deploy the terraform stack you need to download the folder with the terraform scripts from OCI.
 
-### 1. Open Github
+### 1. Download the .zip file
 
-Follow the link below to go to the OCI GitHub page with the folder
+Click on the link below to go to download the Terraform .zip file locally.
 
-  * [Download the folder here.](https://github.com/Germain-V/hpc-ood-stack)
-
-### 2. Download the folder
-
-  Now select the folder and download it locally (You can leave it as a zip).
-
-  ![Shows where to click to download the zip file of the terraform code.](./images/download_button.png)
+[Terraform .zip file](https://objectstorage.us-ashburn-1.oraclecloud.com/p/3abybTOXKsi1RHNEndUEwScizXlI1es2EAOk4H-y7-31kUHllf2er6IvA3NoMAZA/n/idmsdo7nrqrp/b/HPC-OOD-LiveLab-Bucket/o/Terraformhpc-ood-stack-final.zip?download=1)
 
 
 ## Task 2: Deploy the stack on OCI
@@ -284,7 +278,7 @@ That concludes this section. You may now **proceed to the next lab**, where you 
 * **Author:** Chris Wegenek
 , Cloud Engineering 
 * **Contributors:**
-    - Germain Vargas, Cloud Engineering
+Germain Vargas, Cloud Engineering
 
 * **Last Updated By/Date:** Chris Wegenek
 , Cloud Engineering, March 2026

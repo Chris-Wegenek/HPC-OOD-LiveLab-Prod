@@ -144,7 +144,7 @@ That concludes this section, you may now **proceed to the next lab**.
 * **Author:** Chris Wegenek
 , Cloud Engineering 
 * **Contributors:**
-    - Germain Vargas, Cloud Engineering
+Germain Vargas, Cloud Engineering
 
 * **Last Updated By/Date:** Chris Wegenek
 , Cloud Engineering, March 2026
